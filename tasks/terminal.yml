@@ -1,0 +1,19 @@
+- name: Install zsh
+  apt: name=zsh
+
+# - name: Change shell
+#   shell: chsh -s 'which zsh'
+
+- name: Install iterm2
+  when: ansible_facts['distribution'] == "MacOSX"
+  community.general.homebrew_cask:
+    name: iterm2
+    state: present
+
+- name: Install ohmyzsh
+  shell: curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh > ~/.oh-my-installer && chmod +x ~/.oh-my-installer && ~/.oh-my-installer
+
+- name: Install the zsh plugin autosuggestions
+  ansible.builtin.git:
+    repo: "https://github.com/zsh-users/zsh-autosuggestions.git"
+    dest: "~/.oh-my-sh/plugins/zsh-autosuggestions"

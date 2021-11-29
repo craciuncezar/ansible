@@ -1,0 +1,16 @@
+- hosts: localhost
+  become: true
+  gather_facts: true
+  tasks:
+    - include: tasks/terminal.yml
+      tags: terminal
+    - include: tasks/node.yml
+      tags: node
+    - include: tasks/git.yml
+      tags: git
+    - include: tasks/dev-tools.yml
+      when: ansible_facts['distribution'] == "MacOSX"
+      tags: dev-tools
+    - include: tasks/personal-programs.yml
+      when: ansible_facts['distribution'] == "MacOSX"
+      tags: personal-programs

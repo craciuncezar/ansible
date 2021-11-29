@@ -1,0 +1,44 @@
+- name: Install bitwarden password manager
+  community.general.homebrew_cask:
+    name: bitwarden
+    state: present
+
+- name: Install rectangle
+  community.general.homebrew_cask:
+    name: rectangle
+    state: present
+
+- name: Install notion
+  community.general.homebrew_cask:
+    name: notion
+    state: present
+
+- name: Install spotify
+  community.general.homebrew_cask:
+    name: spotify
+    state: present
+
+- name: Install discord
+  community.general.homebrew_cask:
+    name: discord
+    state: present
+
+- name: Install unarchiver
+  community.general.homebrew_cask:
+    name: the-unarchiver
+    state: present
+
+- name: Install qBittorrent
+  community.general.homebrew_cask:
+    name: qbittorrent
+    state: present
+
+- name: Install vlc
+  community.general.homebrew_cask:
+    name: vlc
+    state: present
+
+- name: Install microsoft office
+  community.general.homebrew_cask:
+    name: [microsoft-word, microsoft-excel, microsoft-powerpoint]
+    state: present
