@@ -20,6 +20,19 @@ Running the whole setup is not needed all the time, so I can also target specifi
 ansible-playbook local.yml --tags "terminal"
 ```
 
+## Goals
+
+- [x] Installs Homebrew Package Manager
+- [x] Installs Ansible and start pulling the latest version of the playbook
+- [x] Installs MacOS Command Line Tools
+- [x] Setup the terminal
+  - install iterm2
+  - use ohmyzsh and zsh plugins
+- [x] Install node yarn and ts-node
+- [x] Set my MacOS system preferences
+- [x] Setup git
+- [x] Install dev and personal programs
+
 ## Testing
 
 Buying a new computer to test this setup or reinstalling a fresh OS whenever I make a change is not feasible, who would've thought about that... so I use docker with a linux image to test my stuff on a new fresh container.
@@ -34,9 +47,3 @@ Once in the container, I can run the following command to run ansible and test t
 ```bash
 ansible-playbook local.yml
 ```
-
-## Dotfiles
-
-I manage my dotfiles using [stow](https://medium.com/@waterkip/managing-my-dotfiles-with-gnu-stow-262d2540a866) which makes it easy to deal with symlinks.
-
-> Note some of the dotfiles are encrypted because secrets.

@@ -2,31 +2,10 @@
   community.general.homebrew:
     name: node
     state: present
-    update_homebrew: yes
 
 - name: Install Yarn
   npm:
     name: yarn
-    global: yes
-
-- name: Install eslint
-  npm:
-    name: eslint
-    global: yes
-
-- name: Install prettier
-  npm:
-    name: prettier
-    global: yes
-
-- name: Install Typescript server
-  npm:
-    name: typescript-language-server
-    global: yes
-
-- name: Install Typescript
-  npm:
-    name: typescript
     global: yes
 
 - name: Install TS-Node
