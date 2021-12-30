@@ -17,3 +17,5 @@
       tags: personal-programs
     - include: tasks/mobile.yml
       tags: mobile
+    - include: tasks/rust.yml
+      tags: rust
