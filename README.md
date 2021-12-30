@@ -31,7 +31,7 @@ ansible-playbook local.yml --tags "terminal"
 - [x] Setup my macOS system preferences
 - [x] Setup git
 - [x] Install dev and personal programs
-- [] Pray to the Lord that everything goes well
+- [ ] Pray to the Lord that everything goes well
 
 ## Testing
 
