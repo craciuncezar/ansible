@@ -25,9 +25,7 @@ ansible-playbook local.yml --tags "terminal"
 - [x] Installs Homebrew Package Manager
 - [x] Installs Ansible and start pulling the latest version of the playbook
 - [x] Setup the terminal
-  - install iterm2
-  - use ohmyzsh and zsh plugins
-- [x] Install node yarn and ts-node
+- [x] Install node yarn and n
 - [x] Setup my macOS system preferences
 - [x] Setup git
 - [x] Install dev and personal programs
