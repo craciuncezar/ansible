@@ -9,7 +9,7 @@ Having to setup a new laptop is definitely not my favorite thing to do, so I too
 The command to do the magic is the following one:
 
 ```sh
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" && brew install ansible && sudo ansible-pull -U https://github.com/craciuncezar1996/ansible.git
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" && (echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> /Users/cezarcraciun/.zprofile && eval "$(/opt/homebrew/bin/brew shellenv)" && brew install ansible && sudo ansible-pull -U https://github.com/craciuncezar1996/ansible.git
 ```
 
 > **Note:** I'm using [brew](https://brew.sh/) as a package manager and the ansible-pull command, this will pull the latest version of the playbook from the repository, there is no need to clone the repo, I only need to run the command.
