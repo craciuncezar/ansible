@@ -1,6 +1,6 @@
-- name: Install bitwarden password manager
+- name: Install 1password password manager
   community.general.homebrew_cask:
-    name: bitwarden
+    name: 1password
     state: present
 
 - name: Install rectangle
@@ -41,4 +41,9 @@
 - name: Install microsoft office
   community.general.homebrew_cask:
     name: [microsoft-word, microsoft-excel, microsoft-powerpoint]
+    state: present
+
+- name: Install gifski
+  community.general.homebrew_cask:
+    name: gifski
     state: present
