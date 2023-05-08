@@ -13,19 +13,3 @@
     type: integer
     value: 1
     state: present
-
-- name: "[macOS] iterm2 - Specify the preferences directory"
-  osx_defaults:
-    domain: com.googlecode.iterm2.plist
-    key: PrefsCustomFolder
-    type: string
-    value: /Users/cezar.craciun/dotfiles/files/iterm2
-    state: present
-
-- name: "[macOS] iterm2 - Use the custom preferences in the directory"
-  osx_defaults:
-    domain: com.googlecode.iterm2.plist
-    key: LoadPrefsFromCustomFolder
-    type: integer
-    value: 1
-    state: present

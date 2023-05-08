@@ -9,3 +9,12 @@
     name: user.name
     scope: global
     value: "Cezar Craciun"
+
+- name: Tap my Homebrew repository
+  community.general.homebrew_tap:
+    name: craciuncezar/tap
+
+- name: Install git-smart-checkout
+  community.general.homebrew:
+    name: git-smart-checkout
+    state: present

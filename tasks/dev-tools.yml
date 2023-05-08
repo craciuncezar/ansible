@@ -3,6 +3,11 @@
     name: visual-studio-code
     state: present
 
+- name: Install xcode
+  mas:
+    id: 497799835
+    state: present
+
 - name: Install docker
   community.general.homebrew_cask:
     name: docker
@@ -15,5 +20,15 @@
 
 - name: Install browsers
   community.general.homebrew_cask:
-    name: ["brave-browser", "firefox", "google-chrome"]
+    name: ["arc", "brave-browser", "firefox"]
+    state: present
+
+- name: Install linear
+  community.general.homebrew_cask:
+    name: linear-linear
+    state: present
+
+- name: Install amphetamine
+  mas:
+    id: 937984704
     state: present

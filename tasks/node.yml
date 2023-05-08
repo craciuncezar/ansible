@@ -3,12 +3,17 @@
     name: node
     state: present
 
-- name: Install Yarn
-  npm:
+- name: Install yarn
+  community.general.homebrew:
     name: yarn
-    global: yes
+    state: present
 
-- name: Install TS-Node
+- name: Install pnpm
+  community.general.homebrew:
+    name: pnpm
+    state: present
+
+- name: Install n
   npm:
-    name: ts-node
+    name: n
     global: yes

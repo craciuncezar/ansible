@@ -8,6 +8,11 @@
     name: rectangle
     state: present
 
+- name: Install raycast
+  community.general.homebrew_cask:
+    name: raycast
+    state: present
+
 - name: Install notion
   community.general.homebrew_cask:
     name: notion
@@ -46,4 +51,19 @@
 - name: Install gifski
   community.general.homebrew_cask:
     name: gifski
+    state: present
+
+- name: Install loom
+  community.general.homebrew_cask:
+    name: loom
+    state: present
+
+- name: Install audiobook binder
+  mas:
+    id: 413969927
+    state: present
+
+- name: Install cron
+  community.general.homebrew_cask:
+    name: cron
     state: present

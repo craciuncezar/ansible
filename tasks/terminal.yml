@@ -1,13 +1,8 @@
-- name: Install iterm2
+- name: Install warp
   when: ansible_facts['distribution'] == "MacOSX"
   community.general.homebrew_cask:
-    name: iterm2
+    name: warp
     state: present
 
 - name: Install ohmyzsh
   shell: curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh > ~/.oh-my-installer && chmod +x ~/.oh-my-installer && ~/.oh-my-installer
-
-- name: Install the zsh plugin autosuggestions
-  ansible.builtin.git:
-    repo: "https://github.com/zsh-users/zsh-autosuggestions.git"
-    dest: "~/.oh-my-sh/plugins/zsh-autosuggestions"

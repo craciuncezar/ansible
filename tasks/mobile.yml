@@ -1,9 +1,0 @@
-- name: Install xcode
-  mas:
-    id: 497799835
-    state: present
-
-- name: Install android-studio
-  community.general.homebrew_cask:
-    name: android-studio
-    state: present
